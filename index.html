@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+   <h1>📚 Smart Student Dashboard</h1>
+   <p>Study smarter, not harder</p>
+ </header>
+
+ <div class="grid">
+    
+  <!-- TASKS -->
+  <section class="card highlight">
+    <h2>📋 Tasks</h2>
+
+    <div class="row">
+      <input type="text" id="taskInput" placeholder="Enter task">
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </section>
+    
+  <!-- TIMER -->
+  <section class="card highlight">
+    <h2>⏰ Timer</h2>
+
+    <div class="row">
+      <input type="number" id="minutes" placeholder="Minutes">
+      <input type="number" id="seconds" placeholder="Seconds">
+    </div>
+
+    <h1 id="display">00:00</h1>
+
+    <div class="row">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="stopTimer()">Stop</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+  </section>
+
+  <!-- GRADES -->
+  <section class="card highlight">
+    <h2>📊 Grade Checker</h2>
+
+    <input type="number" id="mark" placeholder="Enter marks">
+    <button onclick="checkGrade()">Check</button>
+
+    <p id="gradeResult"></p>
+  </section>
+
+   <!-- MOTIVATION -->
+  <section class="card highlight">
+    <h2>🎯 Motivation</h2>
+
+    <button onclick="motivate()">Inspire Me</button>
+    <p id="quote"></p>
+  </section>
+
+ </div>
+
+ <script src="./index.js"></script>
+    
+</body>
+</html>
